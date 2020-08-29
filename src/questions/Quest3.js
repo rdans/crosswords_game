@@ -98,19 +98,19 @@ class Question3 extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row style={{flexWrap:'nowrap'}}>
                     Q3.
-                    <Grid gridId = '0' gridName='grid-22' opac='0%'/>
-                  <Grid gridId = '1' gridName='grid-23' opac='0%'/>
-                  <Grid gridId = '2' gridName='grid-24' opac='0%'/>
-                  <Grid gridId = '3' gridName='grid-25' opac='0%'/>
-                  <Grid gridId = '4' gridName='grid-26' opac='0%'/>
+                    <Grid gridId = '0' gridName='grid-22' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '1' gridName='grid-23' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '2' gridName='grid-24' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '3' gridName='grid-25' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '4' gridName='grid-26' opac='0%' disabledGrid = {true}/>
                   <Grid gridId = '5' gridName='grid-27' parentCallback = {this.callbackFunction} correctValue = 'P' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '6' gridName='grid-28' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '7' gridName='grid-29' parentCallback = {this.callbackFunction} correctValue = 'G' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '8' gridName='grid-30' parentCallback = {this.callbackFunction} correctValue = 'E' arrValue={this.state.arrayTrue}/>
-                  <Grid gridId = '9' gridName='grid-31' opac='0%'/>
-                  <Grid gridId = '10' gridName='grid-32' opac='0%'/>
+                  <Grid gridId = '9' gridName='grid-31' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '10' gridName='grid-32' opac='0%' disabledGrid = {true}/>
                   {finalAnswer ? <Icon name='check circle outline' color='green' size='large' style={{marginTop:'20px'}}/> : ''}
                 </Row>
             </Container>

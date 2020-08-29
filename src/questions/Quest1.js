@@ -97,23 +97,25 @@ class Question1 extends Component {
 
 
         return (
-            <Container>
-                <Row>
+            // <div>
+             <Container>
+                <Row style={{flexWrap:'nowrap'}}> 
                     Q1.
-                  <Grid gridId = '0' gridName='grid-0' opac='0%'/>
-                  <Grid gridId = '1' gridName='grid-1' opac='0%'/>
-                  <Grid gridId = '2' gridName='grid-2' opac='0%'/>
+                  <Grid gridId = '0' gridName='grid-0' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '1' gridName='grid-1' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '2' gridName='grid-2' opac='0%' disabledGrid = {true}/>
                   <Grid gridId = '3' gridName='grid-3' parentCallback = {this.callbackFunction} correctValue = 'T' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '4' gridName='grid-4' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '5' gridName='grid-5' parentCallback = {this.callbackFunction} correctValue = 'H' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '6' gridName='grid-6' parentCallback = {this.callbackFunction} correctValue = 'O' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '7' gridName='grid-7' parentCallback = {this.callbackFunction} correctValue = 'E' arrValue={this.state.arrayTrue}/>
-                  <Grid gridId = '8' gridName='grid-8' opac='0%'/>
-                  <Grid gridId = '9' gridName='grid-9' opac='0%'/>
-                  <Grid gridId = '10' gridName='grid-10' opac='0%'/>
+                  <Grid gridId = '8' gridName='grid-8' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '9' gridName='grid-9' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '10' gridName='grid-10' opac='0%' disabledGrid = {true}/>
                   {finalAnswer ? <Icon name='check circle outline' color='green' size='large' style={{marginTop:'20px'}}/> : ''}
                 </Row>
-            </Container>
+             </Container> 
+            // </div>
           );
     }
   

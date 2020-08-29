@@ -99,10 +99,10 @@ class Question6 extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row style={{flexWrap:'nowrap'}}>
                     Q6.
-                    <Grid gridId = '0' gridName='grid-55' opac='0%'/>
-                  <Grid gridId = '1' gridName='grid-56' opac='0%'/>
+                    <Grid gridId = '0' gridName='grid-55' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '1' gridName='grid-56' opac='0%' disabledGrid = {true}/>
                   <Grid gridId = '2' gridName='grid-57' parentCallback = {this.callbackFunction} correctValue = 'C' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '3' gridName='grid-58' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '4' gridName='grid-59' parentCallback = {this.callbackFunction} correctValue = 'R' arrValue={this.state.arrayTrue}/>

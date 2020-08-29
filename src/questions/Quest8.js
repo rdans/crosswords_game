@@ -99,19 +99,19 @@ class Question8 extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row style={{flexWrap:'nowrap'}}>
                     Q8.
-                    <Grid gridId = '0' gridName='grid-77' opac='0%'/>
-                  <Grid gridId = '1' gridName='grid-78' opac='0%'/>
+                    <Grid gridId = '0' gridName='grid-77' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '1' gridName='grid-78' opac='0%' disabledGrid = {true}/>
                   <Grid gridId = '2' gridName='grid-79' parentCallback = {this.callbackFunction} correctValue = 'Y' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '3' gridName='grid-80' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '4' gridName='grid-81' parentCallback = {this.callbackFunction} correctValue = 'Z' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '5' gridName='grid-82' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '6' gridName='grid-83' parentCallback = {this.callbackFunction} correctValue = 'W' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '7' gridName='grid-84' parentCallback = {this.callbackFunction} correctValue = 'A' arrValue={this.state.arrayTrue}/>
-                  <Grid gridId = '8' gridName='grid-85' opac='0%'/>
-                  <Grid gridId = '9' gridName='grid-86' opac='0%'/>
-                  <Grid gridId = '10' gridName='grid-87' opac='0%'/>
+                  <Grid gridId = '8' gridName='grid-85' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '9' gridName='grid-86' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '10' gridName='grid-87' opac='0%' disabledGrid = {true}/>
                   {finalAnswer ? <Icon name='check circle outline' color='green' size='large' style={{marginTop:'20px'}}/> : ''}
                 </Row>
             </Container>

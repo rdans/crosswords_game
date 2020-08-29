@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
   Row, Container
+//   ,Col
 } from 'react-bootstrap'
 import Question1 from '../questions/Quest1.js'
 import Question2 from '../questions/Quest2.js'
@@ -31,7 +32,8 @@ class GridBoxes extends Component {
         return (
 
               <Container>
-                <Row>
+                {/* <div style={{height:'300px', overflowX: 'auto', overflowY:'auto'}}> */}
+                <Row >
                     <Question1 parGridBoxCallback = {this.handleCallBack}/>
                 </Row>
                 <Row>
@@ -60,8 +62,9 @@ class GridBoxes extends Component {
                 </Row>
                 <Row>
                   {this.state.arrayAllQuestion}
+                
                 </Row>
-                   
+                {/* </div>    */}
 
               </Container>
 

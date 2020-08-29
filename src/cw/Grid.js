@@ -64,9 +64,14 @@ class Grid extends Component {
     render() {
 
         return (
-            <div style={{marginTop: '10px', marginLeft:'10px', marginRight: '10px'}}>
+            <div style={{marginTop: '10px', marginLeft:'5px', marginRight: '5px'}}>
                 <Form>
-                    <Form.Control name = {this.props.gridName} maxLength={1} style={{width:'40px', opacity:this.props.opac}} placeholder={this.props.placeHolderValue} onChange={this.handleInput}/>
+                    <Form.Control name = {this.props.gridName} maxLength={1} 
+                    style={{width:'40px', opacity:this.props.opac}} 
+                    placeholder={this.props.placeHolderValue} 
+                    onChange={this.handleInput}
+                    disabled={this.props.disabledGrid}
+                    />
                 </Form>
             </div>
         );

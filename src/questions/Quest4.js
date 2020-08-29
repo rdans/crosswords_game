@@ -99,13 +99,13 @@ class Question4 extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row style={{flexWrap:'nowrap'}}>
                     Q4.
-                    <Grid gridId = '0' gridName='grid-33' opac='0%'/>
-                  <Grid gridId = '1' gridName='grid-34' opac='0%'/>
-                  <Grid gridId = '2' gridName='grid-35' opac='0%'/>
-                  <Grid gridId = '3' gridName='grid-36' opac='0%'/>
-                  <Grid gridId = '4' gridName='grid-37' opac='0%'/>
+                    <Grid gridId = '0' gridName='grid-33' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '1' gridName='grid-34' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '2' gridName='grid-35' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '3' gridName='grid-36' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '4' gridName='grid-37' opac='0%' disabledGrid = {true}/>
                   <Grid gridId = '5' gridName='grid-38' parentCallback = {this.callbackFunction} correctValue = 'P' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '6' gridName='grid-39' parentCallback = {this.callbackFunction} correctValue = 'O' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '7' gridName='grid-40' parentCallback = {this.callbackFunction} correctValue = 'P' arrValue={this.state.arrayTrue}/>

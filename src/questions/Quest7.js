@@ -99,7 +99,7 @@ class Question7 extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row style={{flexWrap:'nowrap'}}>
                     Q7.
                     <Grid gridId = '0' gridName='grid-66' parentCallback = {this.callbackFunction} correctValue = 'K' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '1' gridName='grid-67' parentCallback = {this.callbackFunction} correctValue = 'H' arrValue={this.state.arrayTrue}/>
@@ -107,11 +107,11 @@ class Question7 extends Component {
                   <Grid gridId = '3' gridName='grid-69' parentCallback = {this.callbackFunction} correctValue = 'L' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '4' gridName='grid-70' parentCallback = {this.callbackFunction} correctValue = 'I' arrValue={this.state.arrayTrue}/>
                   <Grid gridId = '5' gridName='grid-71' parentCallback = {this.callbackFunction} correctValue = 'D' arrValue={this.state.arrayTrue}/>
-                  <Grid gridId = '6' gridName='grid-72' opac='0%'/>
-                  <Grid gridId = '7' gridName='grid-73' opac='0%'/>
-                  <Grid gridId = '8' gridName='grid-74' opac='0%'/>
-                  <Grid gridId = '9' gridName='grid-75' opac='0%'/>
-                  <Grid gridId = '10' gridName='grid-76' opac='0%'/>
+                  <Grid gridId = '6' gridName='grid-72' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '7' gridName='grid-73' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '8' gridName='grid-74' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '9' gridName='grid-75' opac='0%' disabledGrid = {true}/>
+                  <Grid gridId = '10' gridName='grid-76' opac='0%' disabledGrid = {true}/>
                   {finalAnswer ? <Icon name='check circle outline' color='green' size='large' style={{marginTop:'20px'}}/> : ''}
                 </Row>
             </Container>
